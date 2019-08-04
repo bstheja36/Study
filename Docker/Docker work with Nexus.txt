@@ -1,0 +1,16 @@
+- Create a file with name /etc/docker/daemon.json
+
+
+[root@docker ~]# cat /etc/docker/daemon.json
+{
+ "insecure-registries": [ "10.10.10.211:8084"],
+ "disable-legacy-registry":true
+}
+[root@docker ~]#
+
+
+- Restart the docker to reflect the impact
+
+  Ex:- service docker restart
+
+- Please refer Attachement of Nexus Directory Image

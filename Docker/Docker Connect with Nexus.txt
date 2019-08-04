@@ -1,0 +1,21 @@
+- Check the availabilty of Connections with Nexus
+
+docker login -u admin -p admin123 10.10.10.211:8084
+
+Login Succeeded
+
+++++++++Docker Tag with Nexus IP+++++++++++++
+- docker tag <imageID> <server IP:Port of Nexus repository/<tagname>
+
+  Ex:- docker tag 80ab675a35e3 10.10.10.211:8084/htppdd.1.0.0
+
++++++++++Docker Push to Nexus Repository++++++
+- docker push with Nexus latest tag name
+
+  EX:- docker push 10.10.10.211:8084/htppdd.1.0.0
+
+++++++++++Docker Pull from Nexus Repository++++++++
+
+- docker pull with Nexus latest tag name
+  Ex:- docker pull 10.10.10.211:8084/htppdd.1.0.0
+ 
